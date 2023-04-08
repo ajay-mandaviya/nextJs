@@ -44,8 +44,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-// issue once build is generated data is not update even passing fallback to true
-// sol : Incremental Static Regeneration(ISR)  its allows update static  pages after you built
 export const getStaticProps: GetStaticProps = async (args) => {
   console.log("args===", args);
   const { postId } = args.params as IParams;
