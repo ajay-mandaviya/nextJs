@@ -9,9 +9,8 @@ export default function Home() {
   return (
     <>
       <h1>HOME PAGE</h1>
-      <Link href={"/users"}>
-        <a>Users</a>
-      </Link>
+      <Link href={"/users"}>Users</Link>
+      <Link href={"/post"}>Posts</Link>
     </>
   );
 }
