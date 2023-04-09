@@ -1,7 +1,10 @@
 import { Footer } from "../../components";
-
-const PageNotFound = () => {
-  return <h1>Page Not Found</h1>;
+const PageNotFound = ({ title, description }: any) => {
+  return (
+    <>
+      <h1>Page Not Found</h1>
+    </>
+  );
 };
 
 export default PageNotFound;
@@ -16,3 +19,4 @@ PageNotFound.getLayout = function PageNotFound(page: any) {
     </>
   );
 };
+// https://next-auth.js.org/v3/configuration/providers
