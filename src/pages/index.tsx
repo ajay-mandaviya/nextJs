@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <h1>HOME PAGE</h1>
+      <h2>HOME PAGE</h2>
       <Link href={"/users"}>Users</Link>
       <Link href={"/post"}>Posts</Link>
     </>
