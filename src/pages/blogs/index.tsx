@@ -13,6 +13,16 @@ const Blogs = ({ data }: any) => {
 export default Blogs;
 // run server side , not run client side , code not include in js bundle
 export const getServerSideProps: GetServerSideProps = async () => {
+  const token = null;
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   const response = await fetch("http://localhost:3001/news");
   const data = await response.json();
   return {
